@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Liseth Mosquera</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    li::marker {
+      content: none;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+  <!-- HERO SECTION -->
+  <section class="min-h-screen bg-gray-900 flex items-center justify-center px-4 py-20">
+    <div class="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center">
+
+      <!-- Text Info -->
+      <div>
+  <p class="text-pink-400 text-lg font-semibold">Hola, soy</p>
+  <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Liseth Xiomara Mosquera Ramirez</h1>
+  <p class="text-xl text-gray-300 mb-1">QA | Soporte Técnico | Análisis de Requerimientos</p>
+
+  <div class="mt-6 flex flex-wrap justify-center gap-4">
+    <!-- Botón contacto -->
+    <a href="#contacto"
+       class="border border-pink-500 text-pink-400 px-6 py-2 rounded hover:bg-pink-500 hover:text-white transition">
+      Contáctame
+    </a>
+
+    <!-- Botón CV -->
+    <a href="CV_Liseth_Mosquera_Soporte.pdf" download
+       class="border border-pink-500 text-pink-400 px-6 py-2 rounded hover:bg-pink-500 hover:text-white transition">
+      <i class="ph ph-file-pdf mr-2"></i>Mi CV
+    </a>
+
+    <!-- Botón LinkedIn -->
+    <a href="https://www.linkedin.com/in/liseth-xiomara-mosquera-ramirez-65590a16b" target="_blank"
+       class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded shadow transition">
+      <i class="ph ph-linkedin-logo mr-1"></i>LinkedIn
+    </a>
+  </div>
+</div>
+
+
+      <!-- Profile Image Placeholder -->
+    
+
+    
+  </section>
+
+  <!-- SOBRE MI -->
+  <section class="bg-gray-800 py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-center">Sobre mí</h2>
+      <p class="text-gray-300 text-lg leading-relaxed">
+        Técnica en programación de sistemas de información con enfoque en soporte técnico de primer nivel, QA manual y análisis de requerimientos. 
+        Tengo experiencia brindando soporte en el uso de herramientas como SysAid, Office 365, redes y plataformas internas. 
+        En QA me he especializado en el diseño, ejecución y documentación de casos de prueba, utilizando herramientas como Azure DevOps. 
+        Además, cuento con habilidades en el levantamiento de requerimientos funcionales, documentación de historias de usuario y colaboración en equipos ágiles.
+      </p>
+    </div>
+  </section>
+
+  <!-- CERTIFICACIONES -->
+  <section class="bg-gray-900 py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-12">Cursos</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <!-- Curso con insignia: Testing -->
+        <div class="flex flex-col items-center">
+          <img src="img/EAFIT.png" alt="Insignia Testing de Software" class="mb-4 w-32 h-32 object-contain transition-transform duration-500 hover:scale-110 hover:rotate-1">
+          <p class="text-lg text-gray-300">Testing de Software - Universidad EAFIT (2023)</p>
+        </div>
+        <!-- Curso sin insignia: Excel -->
+        <div class="flex flex-col items-center">
+         <img src="img/excel.png" alt="Insignia Python" class="mb-4 w-32 h-32 object-contain transition-transform duration-500 hover:scale-110 hover:rotate-1">
+          <p class="text-lg text-gray-300">Gestión de la Información con Microsoft Excel</p>
+        </div>
+        <!-- Curso con insignia: Python -->
+        <div class="flex flex-col items-center">
+          <img src="img/Python.png" alt="Insignia Python" class="mb-4 w-32 h-32 object-contain transition-transform duration-500 hover:scale-110 hover:rotate-1">
+          <p class="text-lg text-gray-300">Introducción a la Programación con Python</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- SERVICIOS -->
+  <section class="bg-gray-900 py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-12 text-center">¿Qué puedo hacer?</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+
+        <!-- Soporte Técnico -->
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-pink-500/40 transition">
+          <h3 class="text-xl font-bold text-pink-400 mb-4">🖥️ Soporte Técnico</h3>
+          <ul class="space-y-4 text-gray-300">
+            <li class="flex items-start gap-2"><i class="ph ph-lifebuoy text-pink-400 text-xl"></i>Atención de incidencias con SysAid</li>
+            <li class="flex items-start gap-2"><i class="ph ph-cloud text-pink-400 text-xl"></i>Gestión de cuentas y servicios Office 365</li>
+            <li class="flex items-start gap-2"><i class="ph ph-wifi-high text-pink-400 text-xl"></i>Diagnóstico y soporte en redes (TCP/IP, DNS, DHCP)</li>
+            <li class="flex items-start gap-2"><i class="ph ph-desktop text-pink-400 text-xl"></i>Mantenimiento de hardware y software</li>
+            <li class="flex items-start gap-2"><i class="ph ph-screencast text-pink-400 text-xl"></i>Soporte remoto y presencial para usuarios internos</li>
+          </ul>
+        </div>
+
+        <!-- QA Manual -->
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-pink-500/40 transition">
+          <h3 class="text-xl font-bold text-pink-400 mb-4">🔍 QA Manual</h3>
+          <ul class="space-y-4 text-gray-300">
+            <li class="flex items-start gap-2"><i class="ph ph-file-magnifying-glass text-pink-400 text-xl"></i>Diseño y ejecución de casos de prueba manuales</li>
+            <li class="flex items-start gap-2"><i class="ph ph-devices text-pink-400 text-xl"></i>Gestión de pruebas con Azure DevOps</li>
+            <li class="flex items-start gap-2"><i class="ph ph-clipboard-text text-pink-400 text-xl"></i>Pruebas funcionales, de regresión e integración</li>
+            <li class="flex items-start gap-2"><i class="ph ph-bug text-pink-400 text-xl"></i>Reporte, seguimiento y documentación de defectos</li>
+            <li class="flex items-start gap-2"><i class="ph ph-lightbulb text-pink-400 text-xl"></i>Propuesta de mejoras basadas en resultados de testing</li>
+          </ul>
+        </div>
+
+        <!-- Análisis de Requerimientos -->
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-pink-500/40 transition">
+          <h3 class="text-xl font-bold text-pink-400 mb-4">📝 Análisis de Requerimientos</h3>
+          <ul class="space-y-4 text-gray-300">
+            <li class="flex items-start gap-2"><i class="ph ph-note-pencil text-pink-400 text-xl"></i>Levantamiento de requerimientos funcionales y técnicos</li>
+            <li class="flex items-start gap-2"><i class="ph ph-flow-arrow text-pink-400 text-xl"></i>Diagramación de procesos y flujos de usuario</li>
+            <li class="flex items-start gap-2"><i class="ph ph-users-three text-pink-400 text-xl"></i>Reuniones de refinamiento con stakeholders</li>
+            <li class="flex items-start gap-2"><i class="ph ph-handshake text-pink-400 text-xl"></i>Trabajo colaborativo con equipos Scrum y desarrollo</li>
+            <li class="flex items-start gap-2"><i class="ph ph-books text-pink-400 text-xl"></i>Documentación clara y estructurada de requerimientos</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MÉTRICAS / STATS -->
+  <section class="bg-gray-800 py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-6">Resumen Profesional</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <p class="text-4xl font-extrabold text-pink-400">+20</p>
+          <p>Proyectos / Pruebas completadas</p>
+        </div>
+        <div>
+          <p class="text-4xl font-extrabold text-pink-400">95%</p>
+          <p>Satisfacción de usuarios</p>
+        </div>
+        <div>
+          <p class="text-4xl font-extrabold text-pink-400">3+</p>
+          <p>Años de experiencia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="bg-pink-500 text-white py-12 px-6 text-center">
+    <h2 class="text-2xl font-bold mb-4">Contáctame</h2>
+    <p class="mb-2">Correo: <a href="mailto:lmosquera987@gmail.com" class="underline">lmosquera987@gmail.com</a></p>
+    <p>Número de Contacto: <a href="+57 3024241251" class="underline" target="_blank">Perfil profesional</a></p>
+  </section>
+
+</body>
+</html>
