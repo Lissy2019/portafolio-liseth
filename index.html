@@ -8,51 +8,36 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="icon" href="favicon.png" type="image/png">
   <style>
     body { font-family: 'Inter', sans-serif; }
-    li::marker {
-      content: none;
+    li::marker { content: none; }
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fade-in 0.8s ease-out;
     }
   </style>
 </head>
 <body class="bg-gray-900 text-gray-100">
 
-  <!-- HERO SECTION -->
-  <section class="min-h-screen bg-gray-900 flex items-center justify-center px-4 py-20">
-    <div class="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center">
-
-      <!-- Text Info -->
-      <div>
-  <p class="text-pink-400 text-lg font-semibold">Hola, soy</p>
-  <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Liseth Xiomara Mosquera Ramirez</h1>
-  <p class="text-xl text-gray-300 mb-1">QA | Soporte Técnico | Análisis de Requerimientos</p>
-
-  <div class="mt-6 flex flex-wrap justify-center gap-4">
-    <!-- Botón contacto -->
-    <a href="#contacto"
-       class="border border-pink-500 text-pink-400 px-6 py-2 rounded hover:bg-pink-500 hover:text-white transition">
-      Contáctame
-    </a>
-
-    <!-- Botón CV -->
-    <a href="CV_Liseth_Mosquera_Soporte.pdf" download
-       class="border border-pink-500 text-pink-400 px-6 py-2 rounded hover:bg-pink-500 hover:text-white transition">
-      <i class="ph ph-file-pdf mr-2"></i>Mi CV
-    </a>
-
-    <!-- Botón LinkedIn -->
-    <a href="https://www.linkedin.com/in/liseth-xiomara-mosquera-ramirez-65590a16b" target="_blank"
-       class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded shadow transition">
-      <i class="ph ph-linkedin-logo mr-1"></i>LinkedIn
-    </a>
-  </div>
-</div>
-
-
-      <!-- Profile Image Placeholder -->
-    
-
-    
+  <!-- HEADER / PRESENTACIÓN -->
+  <section class="bg-gray-900 py-16 px-6 text-center">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-pink-500 animate-fade-in">Liseth Mosquera</h1>
+      <p class="text-xl mt-2">QA | Soporte Técnico | Análisis de Requerimientos</p>
+      <div class="mt-6 flex flex-wrap justify-center gap-4">
+        <a href="#contacto" class="border border-pink-500 text-pink-400 px-6 py-2 rounded hover:bg-pink-500 hover:text-white transition">Contáctame</a>
+        <a href="CV_Liseth_Mosquera_Soporte.pdf" download class="border border-pink-500 text-pink-400 px-6 py-2 rounded hover:bg-pink-500 hover:text-white transition">
+          <i class="ph ph-file-pdf mr-2"></i>Mi CV
+        </a>
+        <a href="https://www.linkedin.com/in/liseth-xiomara-mosquera-ramirez-65590a16b" target="_blank" class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded shadow transition">
+          <i class="ph ph-linkedin-logo mr-1"></i>LinkedIn
+        </a>
+      </div>
+    </div>
   </section>
 
   <!-- SOBRE MI -->
@@ -60,9 +45,9 @@
     <div class="max-w-4xl mx-auto">
       <h2 class="text-3xl font-bold mb-6 text-center">Sobre mí</h2>
       <p class="text-gray-300 text-lg leading-relaxed">
-        Técnica en programación de sistemas de información con enfoque en soporte técnico de primer nivel, QA manual y análisis de requerimientos. 
-        Tengo experiencia brindando soporte en el uso de herramientas como SysAid, Office 365, redes y plataformas internas. 
-        En QA me he especializado en el diseño, ejecución y documentación de casos de prueba, utilizando herramientas como Azure DevOps. 
+        Técnica en programación de sistemas de información con enfoque en soporte técnico de primer nivel, QA manual y análisis de requerimientos.
+        Tengo experiencia brindando soporte en el uso de herramientas como SysAid, Office 365, redes y plataformas internas.
+        En QA me he especializado en el diseño, ejecución y documentación de casos de prueba, utilizando herramientas como Azure DevOps.
         Además, cuento con habilidades en el levantamiento de requerimientos funcionales, documentación de historias de usuario y colaboración en equipos ágiles.
       </p>
     </div>
@@ -73,21 +58,40 @@
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-3xl font-bold mb-12">Cursos</h2>
       <div class="grid md:grid-cols-3 gap-10">
-        <!-- Curso con insignia: Testing -->
         <div class="flex flex-col items-center">
-          <img src="img/EAFIT.png" alt="Insignia Testing de Software" class="mb-4 w-32 h-32 object-contain transition-transform duration-500 hover:scale-110 hover:rotate-1">
+          <a href="https://www.acreditta.com/credential/47d8af88-8862-475a-b63e-4aa80cbb7803?utm_source=copy&resource_type=badge&resource=47d8af88-8862-475a-b63e-4aa80cbb7803" target="_blank">
+            <img src="img/EAFIT.png" alt="Insignia Testing de Software" class="mb-4 w-32 h-32 object-contain transition-transform duration-500 hover:scale-110 hover:rotate-1">
+          </a>
           <p class="text-lg text-gray-300">Testing de Software - Universidad EAFIT (2023)</p>
         </div>
-        <!-- Curso sin insignia: Excel -->
         <div class="flex flex-col items-center">
-         <img src="img/excel.png" alt="Insignia Python" class="mb-4 w-32 h-32 object-contain transition-transform duration-500 hover:scale-110 hover:rotate-1">
+          <a href="43549304-383-CDE-40.pdf" target="_blank">
+            <img src="img/excel.png" alt="Insignia Excel" class="mb-4 w-32 h-32 object-contain transition-transform duration-500 hover:scale-110 hover:rotate-1">
+          </a>
           <p class="text-lg text-gray-300">Gestión de la Información con Microsoft Excel</p>
         </div>
-        <!-- Curso con insignia: Python -->
         <div class="flex flex-col items-center">
-          <img src="img/Python.png" alt="Insignia Python" class="mb-4 w-32 h-32 object-contain transition-transform duration-500 hover:scale-110 hover:rotate-1">
+          <a href="https://www.acreditta.com/credential/3501a829-d993-411e-aa49-6601cfbfb418?utm_source=copy&resource_type=badge&resource=3501a829-d993-411e-aa49-6601cfbfb418" target="_blank">
+            <img src="img/Python.png" alt="Insignia Python" class="mb-4 w-32 h-32 object-contain transition-transform duration-500 hover:scale-110 hover:rotate-1">
+          </a>
           <p class="text-lg text-gray-300">Introducción a la Programación con Python</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HERRAMIENTAS Y TECNOLOGÍAS -->
+  <section class="bg-gray-800 py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white mb-10">🔧 Herramientas y Tecnologías</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-gray-300">
+        <div class="bg-gray-700 p-4 rounded-lg shadow hover:shadow-pink-500/40">Office 365</div>
+        <div class="bg-gray-700 p-4 rounded-lg shadow hover:shadow-pink-500/40">Azure DevOps</div>
+        <div class="bg-gray-700 p-4 rounded-lg shadow hover:shadow-pink-500/40">SysAid</div>
+        <div class="bg-gray-700 p-4 rounded-lg shadow hover:shadow-pink-500/40">Python</div>
+        <div class="bg-gray-700 p-4 rounded-lg shadow hover:shadow-pink-500/40">SQL</div>
+        <div class="bg-gray-700 p-4 rounded-lg shadow hover:shadow-pink-500/40">HTML + Tailwind</div>
+        <div class="bg-gray-700 p-4 rounded-lg shadow hover:shadow-pink-500/40">C#</div>
       </div>
     </div>
   </section>
